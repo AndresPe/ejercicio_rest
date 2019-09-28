@@ -6,7 +6,7 @@ app.use( (request, response, next) => { //middleware
     next()
  })
 
- const operacionesRoutes = require("./routes/operaciones.js") //conexion con la calse operaciones para usar las rutas de las tareas
+ const operacionesRoutes = require("./routes/operaciones.js") //conexion con la clase operaciones para usar las rutas de las tareas
  app.use(operacionesRoutes)
 
  app.use('/', (request, response) => { //alerta en caso de no encontrar la ruta indicada por el usuario
